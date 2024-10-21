@@ -1,0 +1,16 @@
+name: segundo Workflow
+on: push
+jobs:
+    teste:
+        runs-on: linux
+        steps:
+            - name: get checkout
+              uses: actions/checkout
+            - name: install nodejs
+              uses: actions/setup-node
+              with:
+                node-version: 18
+            - name: install dependencias
+              run: npmci
+            - name: run teste
+              run: npm test
