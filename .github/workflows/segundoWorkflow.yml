@@ -2,7 +2,7 @@ name: segundo Workflow
 on: push
 jobs:
     teste:
-        runs-on: ububtu-latest
+        runs-on: ubuntu-latest
         steps:
             - name: get checkout
               uses: actions/checkout@v3
