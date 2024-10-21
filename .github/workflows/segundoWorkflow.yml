@@ -14,3 +14,10 @@ jobs:
               run: npm ci
             - name: run teste
               run: npm test
+
+              on:
+              pull_request:
+              types:
+                - opened
+              branches:
+                - 'releases/**'
