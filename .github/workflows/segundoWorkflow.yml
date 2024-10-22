@@ -1,4 +1,4 @@
-name: segundo Workflow
+name: Develop
 on: push
 jobs:
     teste:
