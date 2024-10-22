@@ -18,7 +18,7 @@ jobs:
             - name: Criar branch release
               run: |
                 git checkout -b release/
-                git push origin release;
+                git push origin release/
                 
             - name: Create Pull Request
               uses: peter-evans/create-pull-request@v5
