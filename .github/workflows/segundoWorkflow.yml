@@ -16,7 +16,7 @@ jobs:
               run: npm test
             
             - name: create branch
-              uses: peterjgrainger/action-create-branch@v3
+              uses: peterjgrainger/action-create-branch@v3.0.0
               with:
                 branch: 'release-notes'
                 
