@@ -15,9 +15,6 @@ jobs:
             - name: run teste
               run: npm test
 
-on:
-pull_request:
-  types:
-  - opened
-  branches:
-  - 'releases/**'
+        pull_request:
+          types: opened
+          branches: 'releases/**'
