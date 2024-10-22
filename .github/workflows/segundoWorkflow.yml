@@ -25,7 +25,7 @@ jobs:
             - name: Create Pull Request
               uses: peter-evans/create-pull-request@v5
               with:
-                token: ${{ secrets.GITHUB_TOKEN }}  # Token para autenticação
+                token: ${{ secrets.TOKEN }}  # Token para autenticação
                 branch: 'release/'  # Nome da branch que será criada para o PR
                 base: 'develop'  # Branch base para o PR
                 title: 'Automated PR - Atualizações após execução do workflow'
