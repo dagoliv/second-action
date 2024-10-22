@@ -17,14 +17,14 @@ jobs:
             
             - name: Criar branch release
               run: |
-                git checkout -b release1
-                git push origin release1
+                git checkout -b release2
+                git push origin release2
                 
             - name: Create Pull Request
               uses: peter-evans/create-pull-request@v5
               with:
                 token: ${{ secrets.TOKEN }}  # Token para autenticação
-                branch: 'release1'  # Nome da branch que será criada para o PR
+                branch: 'release2'  # Nome da branch que será criada para o PR
                 base: 'develop'  # Branch base para o PR
                 title: 'Automated PR - Atualizações após execução do workflow'
                 body: 'Este PR foi criado automaticamente após a execução do workflow.' 
