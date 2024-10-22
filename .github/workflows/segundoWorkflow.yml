@@ -17,8 +17,10 @@ jobs:
             
             - name: create branch
               uses: peterjgrainger/action-create-branch@v3.0.0
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               with:
-                branch: 'release-notes'
+                branch: 'release/'
                 
             - name: Create Pull Request
               uses: peter-evans/create-pull-request@v5
